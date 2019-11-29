@@ -20,6 +20,13 @@ class Cart {
   getItems() {
     return this._items;
   }
+
+  /**
+   * @deprecated 🚧 Work in progress.
+   */
+  getTotalPrice() {
+    throw new Error('🚧 work in progress!');
+  }
 }
 
 describe('Cart', () => {
@@ -38,6 +45,6 @@ describe('Cart', () => {
     const cart = new Cart();
     cart.addItem(sandwich);
     cart.addItem(burger);
-    // @todo check cart.getTotalPrice() to equal 18
+    // expect(cart.getTotalPrice()).toEqual(18);
   });
 });
