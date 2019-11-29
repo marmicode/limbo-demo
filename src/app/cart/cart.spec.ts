@@ -14,11 +14,12 @@ function createItem(name: string, price: number): Item {
  * @deprecated 🚧 Work in progress.
  */
 class Cart {
+  private _items: Item[] = [];
   /**
    * @deprecated 🚧 Work in progress.
    */
   addItem(item: Item) {
-    throw new Error('🚧 work in progress!');
+    this._items = [...this._items, item];
   }
 }
 
@@ -27,8 +28,8 @@ describe('Cart', () => {
     const sandwich = createItem('Double Beurre', 6);
     const burger = createItem('Burger', 12);
     const cart = new Cart();
-    // cart.addItem(sandwich);
-    // cart.addItem(burger);
+    cart.addItem(sandwich);
+    cart.addItem(burger);
     // expect(cart.getItems()).toEqual([sandwich, burger])
   });
 });
