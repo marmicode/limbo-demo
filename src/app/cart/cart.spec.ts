@@ -1,6 +1,15 @@
+interface Price {
+  amount: number;
+  currency: string;
+}
+
 interface Item {
   name: string;
   priceAmount: number;
+  /**
+   * @deprecated 🚧 Work in progress.
+   */
+  price?: Price;
 }
 
 function createItem({
