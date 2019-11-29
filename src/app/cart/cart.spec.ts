@@ -1,12 +1,12 @@
 interface Item {
   name: string;
-  price: number;
+  priceAmount: number;
 }
 
 function createItem({ name, price }: { name: string; price: number }): Item {
   return {
     name,
-    price
+    priceAmount: price
   };
 }
 
@@ -22,7 +22,7 @@ class Cart {
   }
 
   getTotalPrice() {
-    return this._items.reduce((acc, item) => acc + item.price, 0);
+    return this._items.reduce((acc, item) => acc + item.priceAmount, 0);
   }
 }
 
