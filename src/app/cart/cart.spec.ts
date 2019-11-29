@@ -21,6 +21,13 @@ class Cart {
   addItem(item: Item) {
     this._items = [...this._items, item];
   }
+
+  /**
+   * @deprecated 🚧 Work in progress.
+   */
+  getItems() {
+    throw new Error('🚧 work in progress!');
+  }
 }
 
 describe('Cart', () => {
@@ -30,6 +37,6 @@ describe('Cart', () => {
     const cart = new Cart();
     cart.addItem(sandwich);
     cart.addItem(burger);
-    // expect(cart.getItems()).toEqual([sandwich, burger])
+    expect(cart.getItems()).toEqual([sandwich, burger]);
   });
 });
