@@ -9,7 +9,7 @@ interface Item {
    * @deprecated use {@Link Item.price} instead.
    */
   priceAmount?: number;
-  price?: Price;
+  price: Price;
 }
 
 function createItem(args: Item): Item {
