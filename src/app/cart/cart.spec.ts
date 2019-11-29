@@ -13,10 +13,17 @@ interface Item {
 }
 
 function createItem(args: Item): Item {
+  const price = args.price || {
+    amount: args.priceAmount,
+    currency: 'EUR'
+  };
+
+  const priceAmount = args.priceAmount || args.price.amount;
+
   return {
     name: args.name,
-    price: args.price,
-    priceAmount: args.priceAmount
+    price,
+    priceAmount
   };
 }
 
