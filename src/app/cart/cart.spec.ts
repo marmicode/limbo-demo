@@ -27,8 +27,8 @@ class Cart {
 }
 
 describe('Cart', () => {
-  let sandwich;
-  let burger;
+  let sandwich: Item;
+  let burger: Item;
 
   beforeEach(() => {
     sandwich = createItem('Double Beurre', 6);
