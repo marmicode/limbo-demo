@@ -5,22 +5,13 @@ interface Price {
 
 interface Item {
   name: string;
-  /**
-   * @deprecated use {@Link Item.price} instead.
-   */
-  priceAmount?: number;
   price: Price;
 }
 
 function createItem(args: Item): Item {
-  const price = args.price || {
-    amount: args.priceAmount,
-    currency: 'EUR'
-  };
-
   return {
     name: args.name,
-    price
+    price: args.price
   };
 }
 
