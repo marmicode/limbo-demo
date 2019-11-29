@@ -6,7 +6,7 @@ interface Price {
 interface Item {
   name: string;
   /**
-   * @deprecated .
+   * @deprecated use {@Link Item.price} instead.
    */
   priceAmount?: number;
   price?: Price;
@@ -17,8 +17,6 @@ function createItem(args: Item): Item {
     amount: args.priceAmount,
     currency: 'EUR'
   };
-
-  const priceAmount = args.priceAmount || args.price.amount;
 
   return {
     name: args.name,
