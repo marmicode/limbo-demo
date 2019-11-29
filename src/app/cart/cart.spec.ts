@@ -39,7 +39,7 @@ class Cart {
   }
 
   getTotalPrice() {
-    return this._items.reduce((acc, item) => acc + item.priceAmount, 0);
+    return this._items.reduce((acc, item) => acc + item.price.amount, 0);
   }
 }
 
