@@ -29,14 +29,15 @@ class Cart {
 describe('Cart', () => {
   let sandwich: Item;
   let burger: Item;
+  let cart: Cart;
 
   beforeEach(() => {
     sandwich = createItem('Double Beurre', 6);
     burger = createItem('Burger', 12);
+    cart = new Cart();
   });
 
   it('should add items', () => {
-    const cart = new Cart();
     cart.addItem(sandwich);
     cart.addItem(burger);
     expect(cart.getItems()).toEqual([sandwich, burger]);
