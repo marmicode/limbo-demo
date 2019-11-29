@@ -32,5 +32,12 @@ describe('Cart', () => {
     expect(cart.getItems()).toEqual([sandwich, burger]);
   });
 
-  it.todo('🚧 should get total price');
+  xit('🚧 should get total price', () => {
+    const sandwich = createItem('Double Beurre', 6);
+    const burger = createItem('Burger', 12);
+    const cart = new Cart();
+    cart.addItem(sandwich);
+    cart.addItem(burger);
+    // @todo check cart.getTotalPrice() to equal 18
+  });
 });
