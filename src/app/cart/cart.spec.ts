@@ -25,7 +25,7 @@ class Cart {
    * @deprecated 🚧 Work in progress.
    */
   getTotalPrice() {
-    throw new Error('🚧 work in progress!');
+    return this._items.reduce((acc, item) => acc + item.price, 0);
   }
 }
 
