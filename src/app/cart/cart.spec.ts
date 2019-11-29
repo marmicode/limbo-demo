@@ -31,4 +31,6 @@ describe('Cart', () => {
     cart.addItem(burger);
     expect(cart.getItems()).toEqual([sandwich, burger]);
   });
+
+  it.todo('🚧 should get total price');
 });
