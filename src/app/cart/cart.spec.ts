@@ -12,10 +12,11 @@ interface Item {
   price?: Price;
 }
 
-function createItem({ name, priceAmount }: Item): Item {
+function createItem(args: Item): Item {
   return {
-    name,
-    priceAmount
+    name: args.name,
+    price: args.price,
+    priceAmount: args.priceAmount
   };
 }
 
