@@ -5,10 +5,10 @@ interface Price {
 
 interface Item {
   name: string;
-  priceAmount?: number;
   /**
-   * @deprecated 🚧 Work in progress.
+   * @deprecated .
    */
+  priceAmount?: number;
   price?: Price;
 }
 
