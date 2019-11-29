@@ -5,7 +5,7 @@ interface Price {
 
 interface Item {
   name: string;
-  priceAmount: number;
+  priceAmount?: number;
   /**
    * @deprecated 🚧 Work in progress.
    */
@@ -22,8 +22,7 @@ function createItem(args: Item): Item {
 
   return {
     name: args.name,
-    price,
-    priceAmount
+    price
   };
 }
 
