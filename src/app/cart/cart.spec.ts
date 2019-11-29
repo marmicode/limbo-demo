@@ -21,9 +21,6 @@ class Cart {
     return this._items;
   }
 
-  /**
-   * @deprecated 🚧 Work in progress.
-   */
   getTotalPrice() {
     return this._items.reduce((acc, item) => acc + item.price, 0);
   }
@@ -39,7 +36,7 @@ describe('Cart', () => {
     expect(cart.getItems()).toEqual([sandwich, burger]);
   });
 
-  it('🚧 should get total price', () => {
+  it('should get total price', () => {
     const sandwich = createItem('Double Beurre', 6);
     const burger = createItem('Burger', 12);
     const cart = new Cart();
