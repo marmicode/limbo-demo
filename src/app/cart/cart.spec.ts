@@ -45,6 +45,6 @@ describe('Cart', () => {
     const cart = new Cart();
     cart.addItem(sandwich);
     cart.addItem(burger);
-    // expect(cart.getTotalPrice()).toEqual(18);
+    expect(cart.getTotalPrice()).toEqual(18);
   });
 });
