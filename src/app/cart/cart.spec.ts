@@ -12,13 +12,7 @@ interface Item {
   price?: Price;
 }
 
-function createItem({
-  name,
-  priceAmount
-}: {
-  name: string;
-  priceAmount: number;
-}): Item {
+function createItem({ name, priceAmount }: Item): Item {
   return {
     name,
     priceAmount
