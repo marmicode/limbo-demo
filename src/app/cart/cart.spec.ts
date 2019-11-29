@@ -46,8 +46,14 @@ describe('Cart', () => {
   let cart: Cart;
 
   beforeEach(() => {
-    sandwich = createItem({ name: 'Double Beurre', priceAmount: 6 });
-    burger = createItem({ name: 'Burger', priceAmount: 12 });
+    sandwich = createItem({
+      name: 'Double Beurre',
+      price: { amount: 6, currency: 'EUR' }
+    });
+    burger = createItem({
+      name: 'Burger',
+      price: { amount: 12, currency: 'EUR' }
+    });
     cart = new Cart();
   });
 
