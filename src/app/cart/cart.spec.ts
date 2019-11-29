@@ -3,10 +3,16 @@ interface Item {
   priceAmount: number;
 }
 
-function createItem({ name, price }: { name: string; price: number }): Item {
+function createItem({
+  name,
+  priceAmount
+}: {
+  name: string;
+  priceAmount: number;
+}): Item {
   return {
     name,
-    priceAmount: price
+    priceAmount
   };
 }
 
@@ -32,8 +38,8 @@ describe('Cart', () => {
   let cart: Cart;
 
   beforeEach(() => {
-    sandwich = createItem({ name: 'Double Beurre', price: 6 });
-    burger = createItem({ name: 'Burger', price: 12 });
+    sandwich = createItem({ name: 'Double Beurre', priceAmount: 6 });
+    burger = createItem({ name: 'Burger', priceAmount: 12 });
     cart = new Cart();
   });
 
