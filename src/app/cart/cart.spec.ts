@@ -3,7 +3,7 @@ interface Item {
   price: number;
 }
 
-function createItem(name: string, price: number): Item {
+function createItem({ name, price }: { name: string; price: number }): Item {
   return {
     name,
     price
@@ -32,8 +32,8 @@ describe('Cart', () => {
   let cart: Cart;
 
   beforeEach(() => {
-    sandwich = createItem('Double Beurre', 6);
-    burger = createItem('Burger', 12);
+    sandwich = createItem({ name: 'Double Beurre', price: 6 });
+    burger = createItem({ name: 'Burger', price: 12 });
     cart = new Cart();
   });
 
