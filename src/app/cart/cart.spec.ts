@@ -27,9 +27,15 @@ class Cart {
 }
 
 describe('Cart', () => {
+  let sandwich;
+  let burger;
+
+  beforeEach(() => {
+    sandwich = createItem('Double Beurre', 6);
+    burger = createItem('Burger', 12);
+  });
+
   it('should add items', () => {
-    const sandwich = createItem('Double Beurre', 6);
-    const burger = createItem('Burger', 12);
     const cart = new Cart();
     cart.addItem(sandwich);
     cart.addItem(burger);
