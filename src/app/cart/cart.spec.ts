@@ -44,7 +44,6 @@ describe('Cart', () => {
   });
 
   it('should get total price', () => {
-    const cart = new Cart();
     cart.addItem(sandwich);
     cart.addItem(burger);
     expect(cart.getTotalPrice()).toEqual(18);
