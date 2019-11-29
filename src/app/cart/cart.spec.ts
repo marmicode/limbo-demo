@@ -32,7 +32,7 @@ describe('Cart', () => {
     expect(cart.getItems()).toEqual([sandwich, burger]);
   });
 
-  xit('🚧 should get total price', () => {
+  it('🚧 should get total price', () => {
     const sandwich = createItem('Double Beurre', 6);
     const burger = createItem('Burger', 12);
     const cart = new Cart();
