@@ -1,27 +1,11 @@
-# LimboDemo
+# Limbo demonstration
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.0-rc.2.
+This repo contains two branches [ttdd](https://github.com/marmicode/limbo-demo/commits/ttdd) & [tcr](https://github.com/marmicode/limbo-demo/commits/tcr) that respectively demonstrate both approaches Timeboxed Test-Driven Development and Test && Commit || Revert. Both can can help you achieve Limbo & atomic changes.
 
-## Development server
+You can watch a live coding session at AngularUp :
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+[![Boosting your time to market by dancing the Limbo @AngularUp](https://img.youtube.com/vi/izGz7H-8yIk/0.jpg)](https://youtu.be/izGz7H-8yIk)
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# Resources
+https://medium.com/@kentbeck_7670/limbo-scaling-software-collaboration-afd4f00db4b
+https://medium.com/@kentbeck_7670/test-commit-revert-870bbd756864
